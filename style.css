@@ -289,3 +289,18 @@ Intro website
     font-size: 50px;
     padding-top: 2px;
 }
+
+.outer_wheel {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 50%;
+    border: solid;
+}
+
+.inner_wheel {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom right, #9381FF, #B8B8FF);
+}
