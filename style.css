@@ -1,3 +1,8 @@
+:root {
+    --clr-neon: hsl(317 100% 54%);
+    --clr-ng: hsl(323 21% 16%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -300,6 +305,11 @@ Intro website
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+
+    color: var(--clr-neon);
+    border-color: var(--clr-neon);
+
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
 }
 
 .inner_wheel {
