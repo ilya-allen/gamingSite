@@ -14,9 +14,6 @@ a {
     color: black;
 }
 
-body {
-    overflow: hidden;
-}
 
 .mine_col {
     float: left;
@@ -286,6 +283,10 @@ Intro website
 
 #mine_card {
     background-image: url("mines_div.png");
+}
+
+#wheel_card {
+    background-image: url("wheel_game_div.png");
 }
 
 .title {
