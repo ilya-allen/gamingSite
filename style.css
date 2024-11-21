@@ -322,3 +322,26 @@ Intro website
     border-radius: 50%;
     background-image: linear-gradient(to bottom right, #9381FF, #B8B8FF);
 }
+
+.input_wrapper {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.range_slider {
+    -webkit-appearance: none;
+    width: 500px;
+    height: 10px;
+}
+
+.range_slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; 
+    height: 25px;
+    cursor: pointer; 
+    border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 25px solid #8100bd;
+  }
