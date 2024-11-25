@@ -327,6 +327,7 @@ Intro website
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
 }
 
 .range_slider {
@@ -344,4 +345,21 @@ Intro website
     border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
 	border-top: 25px solid #8100bd;
-  }
+}
+
+.arrow_div {
+    margin-top: 50px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 50px;
+}
+
+.arrow {
+    border: solid rgb(67, 190, 10);
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 20px;
+    rotate: 45deg;
+}
