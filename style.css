@@ -336,6 +336,12 @@ Intro website
     height: 10px;
 }
 
+.range_wrapper {
+    display: flex;
+    flex-direction: column;
+    
+}
+
 .range_slider::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
@@ -362,4 +368,9 @@ Intro website
     display: inline-block;
     padding: 20px;
     rotate: 45deg;
+}
+
+.percentage_text {
+    float: left;
+    display: flex;
 }
