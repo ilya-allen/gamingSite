@@ -339,7 +339,6 @@ Intro website
 .range_wrapper {
     display: flex;
     flex-direction: column;
-    
 }
 
 .range_slider::-webkit-slider-thumb {
@@ -371,6 +370,12 @@ Intro website
 }
 
 .percentage_text {
-    float: left;
-    display: flex;
+    text-align: center;
+}
+
+.bet_wrapper {
+    margin: auto;
+    margin-top: 25px;
+    width: 50%;
+
 }
