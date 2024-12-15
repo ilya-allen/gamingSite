@@ -371,11 +371,30 @@ Intro website
 
 .percentage_text {
     text-align: center;
+    margin-bottom: 25px;
 }
 
 .bet_wrapper {
     margin: auto;
     margin-top: 25px;
     width: 50%;
-
 }
+
+.bet_num {
+   float: right;
+   margin-right: 20px;
+   width: 50px;
+   height: 20px;
+}
+
+.submit_bet {
+    margin-left: 20px;
+    width: 70px;
+    height: 25px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: rgb(26, 26, 26) 4px 4px 0 0,#ffffff 4px 4px 0 1px;
+    font-family: Inter, sans-serif;
+}
+
+
