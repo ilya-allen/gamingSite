@@ -372,6 +372,7 @@ Intro website
 .percentage_text {
     text-align: center;
     margin-bottom: 25px;
+    color: #9381FF;
 }
 
 .bet_wrapper {
@@ -383,8 +384,14 @@ Intro website
 .bet_num {
    float: right;
    margin-right: 20px;
-   width: 50px;
-   height: 20px;
+   width: 80px;
+   background-color: antiquewhite;
+   box-shadow: none;
+   border: none;
+   font-size: 25px;
+   height: 35px;
+   outline: none;
+   font-family: Inter, sans-serif;
 }
 
 .submit_bet {
