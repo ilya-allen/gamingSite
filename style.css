@@ -389,19 +389,23 @@ Intro website
    box-shadow: none;
    border: none;
    font-size: 25px;
-   height: 35px;
+   height: 50px;
    outline: none;
    font-family: Inter, sans-serif;
 }
 
 .submit_bet {
     margin-left: 20px;
-    width: 70px;
-    height: 25px;
-    border: 1px solid #000;
-    border-radius: 4px;
-    box-shadow: rgb(26, 26, 26) 4px 4px 0 0,#ffffff 4px 4px 0 1px;
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color:#9381FF;
     font-family: Inter, sans-serif;
+}
+
+.disabled{
+    pointer-events: none;
+    opacity: 50%;
 }
 
 
