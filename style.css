@@ -367,6 +367,13 @@ Intro website
     display: inline-block;
     padding: 20px;
     rotate: 45deg;
+    margin: auto;
+}
+
+.arrow_container {
+    width: fit-content;
+    margin: auto;
+    margin-left: 50%gt;
 }
 
 .percentage_text {
@@ -408,4 +415,6 @@ Intro website
     opacity: 50%;
 }
 
-
+.above_bar {
+    width: 500px;
+}
