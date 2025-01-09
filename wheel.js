@@ -7,10 +7,10 @@ const submitBet = document.querySelector('.submit_bet');
 const betNum = document.querySelector('.bet_num');
 const moneyText = document.querySelector('.money')
 let money = 5;
-
+let val = rangeSlider.value;
 
 rangeSlider.addEventListener('input', function() {
-    let val = rangeSlider.value;
+    val = rangeSlider.value;
     let valPercentage = (rangeSlider.value / rangeSlider.max) * 100;
     percentageText.textContent = `${val}%`  
     rangeSlider.style.background = `linear-gradient(to right, #9381FF ${valPercentage}%, #fff ${valPercentage}%)`
@@ -22,5 +22,14 @@ submitBet.addEventListener('click', function() {
         money -= pendingBet;
         moneyText.textContent = `$${money}`
         submitBet.classList.add('disabled')
+        rangeSlider.classList.add('disabled')
+        randomNumGenerator(val)
     }
 })
+
+function randomNumGenerator(val) {
+    const reqVal = val;
+    const ranNum = Math.floor(Math.random() * 100);
+    console.log(reqVal >= ranNum);
+    return reqVal >= ranNum;
+}
