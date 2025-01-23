@@ -18,18 +18,19 @@ rangeSlider.addEventListener('input', function() {
 
 submitBet.addEventListener('click', function() {
     const pendingBet = betNum.value;
-    const multiX = 1;
+    let multiX = 1;
     if(pendingBet <= money) {
+        betNum.disabled = true;
         money -= pendingBet;
         moneyText.textContent = `$${money}`
         submitBet.classList.add('disabled')
         rangeSlider.classList.add('disabled')
         if(randomNumGenerator(val)) {
-            multiX += 0.1 * val;
+            multiX = 4 * (0.01 * val);
+            console.log(multiX)
+            betNum.disabled = false;
         }
     }
-    money = pendingBet * multiX;
-    moneyText.textContent = `$${money}`
 
 })
 
