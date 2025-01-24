@@ -17,17 +17,23 @@ rangeSlider.addEventListener('input', function() {
 })
 
 submitBet.addEventListener('click', function() {
-    const pendingBet = betNum.value;
+    let pendingBet = betNum.value;
     let multiX = 1;
     if(pendingBet <= money) {
         betNum.disabled = true;
-        money -= pendingBet;
+        moneyText.textContent = `$${money - pendingBet}`;
         moneyText.textContent = `$${money}`
         submitBet.classList.add('disabled')
         rangeSlider.classList.add('disabled')
         if(randomNumGenerator(val)) {
             multiX = 4 * (0.01 * val);
-            console.log(multiX)
+            pendingBet *= multiX;
+            money += pendingBet;
+            moneyText.textContent = `$${money}`
+            console.log(multiX, pendingBet)
+            betNum.disabled = false;
+        } else {
+            money -= pendingBet;
             betNum.disabled = false;
         }
     }
