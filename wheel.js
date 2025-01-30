@@ -16,6 +16,15 @@ rangeSlider.addEventListener('input', function() {
     rangeSlider.style.background = `linear-gradient(to right, #9381FF ${valPercentage}%, #fff ${valPercentage}%)`
 })
 
+rangeSlider.addEventListener('mouseup', function() {
+    if(rangeSlider.value < 30) {
+        rangeSlider.value = 30;
+        let valPercentage = (rangeSlider.value / rangeSlider.max) * 100;
+        rangeSlider.style.background = `linear-gradient(to right, #9381FF ${valPercentage}%, #fff ${valPercentage}%)`
+        percentageText.textContent = `${rangeSlider.value}%`  
+    }
+})
+
 submitBet.addEventListener('click', function() {
     let pendingBet = betNum.value;
     let multiX = 1;
