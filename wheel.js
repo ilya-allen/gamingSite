@@ -37,12 +37,14 @@ submitBet.addEventListener('click', function() {
         if(randomNumGenerator(val)) {
             multiX = 4 * (0.01 * val);
             pendingBet *= multiX;
-            money += pendingBet;
+            money += Math.round(pendingBet * 10) / 10;
             moneyText.textContent = `$${money}`
             console.log(multiX, pendingBet)
             betNum.disabled = false;
         } else {
             money -= pendingBet;
+            pendingBet = 0;
+            moneyText.textContent = `$${money}`
             betNum.disabled = false;
         }
     }
